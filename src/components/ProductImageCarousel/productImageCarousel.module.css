@@ -1,0 +1,28 @@
+.root {
+    position: relative;
+}
+
+.carousel {
+    max-width: 620px!important;
+}
+.carousel :global(.slideInner___2mfX9){
+    bottom: 0!important;
+    right: 0!important;
+    display: flex;
+    justify-content: center;
+
+}
+
+.slide{
+    cursor: pointer;
+}
+
+
+.imgContainer{
+    max-width:100%;
+    max-height: 100%;
+}
+
+.img{
+    max-width: 100%;
+}

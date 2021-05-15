@@ -1,0 +1,45 @@
+.root {
+    max-width: 1264px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.product {
+    composes: root from '../ProductCard/productCard.module.css';
+    margin-bottom: 12px;
+}
+
+.newProductCard {
+    composes: productCard from '../ProductCard/productCard.module.css';
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 1300px) {
+    .product {
+        composes: root from '../ProductCard/productCard.module.css';
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-bottom: 25px
+    }
+
+}
+
+@media screen and (max-width: 1299px) {
+    .root {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .root {
+        max-width: 590px;
+        display: flex;
+        margin: 0 auto;
+        padding-left: 6px;
+    }
+}

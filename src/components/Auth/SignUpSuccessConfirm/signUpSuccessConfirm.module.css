@@ -1,0 +1,16 @@
+.root {
+    composes: root from '../SignUpForm/signUpForm.module.css';
+}
+
+.input {
+    composes: input from '../SignUpForm/signUpForm.module.css';
+}
+.confirm {
+    composes: signUp from '../SignUpForm/signUpForm.module.css';
+}
+
+.label{
+    color:  #878787;
+    font-size: 12px;
+    line-height: 211.7%;
+}

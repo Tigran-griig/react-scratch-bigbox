@@ -1,0 +1,21 @@
+.button {
+    composes: button from '../Button/button.module.css';
+}
+@media screen and (max-width: 825px){
+    .button{
+        margin-top: 17px;
+    }
+}
+@media screen and (max-width: 500px){
+    .button{
+        margin-top: 15px;
+    }
+}
+.searchIcon {
+    font-family: icomoon;
+    font-size: 20px;
+}
+
+.searchIcon:before {
+    content: "\e911";
+}

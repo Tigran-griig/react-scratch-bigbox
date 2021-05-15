@@ -1,0 +1,39 @@
+.root{
+    max-width: 1252px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .root{
+        max-width: 590px;
+        margin: 0 auto;
+        padding: 0 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .root{
+        max-width: 510px;
+        padding: 0 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .root{
+        padding: 0;
+        margin: 0 12px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .root{
+        padding: 0;
+        margin: 0 12px;
+        max-height: 320px;
+    }
+
+}

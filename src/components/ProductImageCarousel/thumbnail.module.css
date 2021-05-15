@@ -1,0 +1,66 @@
+.root {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.thumbnailButton {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    overflow: hidden;
+    border: 0;
+    position: relative;
+    margin: 6px 6px;
+}
+
+.img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.thumbnailButton:disabled {
+    border: 2px solid #FF4D41
+
+}
+
+
+.iconLeft {
+    font-family: icomoon;
+    font-size: 12px;
+    cursor: pointer;
+    color: black;
+    background: transparent;
+    outline: none;
+    border: 0;
+}
+
+.iconRight {
+    font-family: icomoon;
+    font-size: 12px;
+    cursor: pointer;
+    color: black;
+    background: transparent;
+    outline: none;
+    border: 0;
+}
+
+
+
+.iconRight:before {
+    content: '\e913';
+
+}
+
+.iconLeft:before {
+    content: '\e914';
+}

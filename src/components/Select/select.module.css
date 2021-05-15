@@ -1,0 +1,145 @@
+.root {
+
+}
+
+.select {
+    display: flex;
+    align-items: center;
+}
+
+.selectBox {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.label {
+    font-size: 13px;
+    line-height: 211.7%;
+    color: #000000
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    min-width: 130px;
+    max-width: 150px;
+    padding: 10px 5px;
+    overflow-y: scroll;
+    width: 100%;
+    z-index: 10;
+}
+.options::-webkit-scrollbar{
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+  border-radius: 15px;
+}
+.options::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 15px;
+}
+
+
+.option {
+    display: flex;
+    margin: 3px 0;
+
+}
+
+.activeOption {
+    composes: option;
+}
+
+.activeOption > .leftValue {
+    font-weight: bold;
+}
+
+.activeOption > .leftIcon {
+    font-weight: bold;
+}
+
+.activeOption > .rightIcon {
+    font-weight: bold;
+    color: var(--main-color-black);
+}
+
+.leftValue {
+
+    font-family: icomoon;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #444444;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.leftIcon {
+    composes: leftValue;
+}
+
+.rightValue {
+    composes: leftValue;
+    width: 100%;
+}
+
+.rightIcon {
+    composes: leftValue;
+    margin-right: 15px;
+    font-size: 7px;
+    color: #EAEAEA;
+
+}
+
+.option:hover > .leftValue {
+    font-weight: bold;
+}
+
+.option:hover > .leftIcon {
+    font-weight: bold;
+}
+
+.option:hover > .rightIcon {
+    font-weight: bold;
+    color: var(--main-color-black);
+}
+
+
+.button {
+    background: transparent;
+    display: flex;
+    outline: none;
+    border: 0;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    line-height: 211.7%;
+    color: #4B4B4B;
+    cursor: pointer;
+}
+
+.decrease {
+    font-family: icomoon;
+    font-size: 7px;
+    margin-left: 40px;
+    color: var(--main-color-black);
+}
+
+.decrease:before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "\e919";
+}
+
+

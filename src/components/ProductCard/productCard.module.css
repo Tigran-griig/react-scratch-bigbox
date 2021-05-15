@@ -1,0 +1,151 @@
+@media screen and (min-width: 600px) {
+    .root {
+        max-width: 280px;
+        margin: 0 6px;
+    }
+
+    .productCard {
+        max-width: 280px;
+        max-height: 280px;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+    .root {
+        max-width: 304px;
+    }
+
+    .productCard {
+        max-width: 304px;
+        max-height: 304px;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        margin: 0;
+
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .root {
+        margin: 0 6px;
+    }
+
+    .productCard {
+        max-width: 220px;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .root {
+        max-width: 180px;
+        margin: auto;
+    }
+
+    .productCard {
+        max-width: 165px;
+        max-height: 180px;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+}
+
+.imgProduct {
+    height: 100%;
+    width: 100%;
+    max-height: 304px;
+}
+
+.productCard:hover > img {
+    transition-duration: 500ms;
+    transform: scale(1.2);
+}
+
+.productCard:hover > .productIcons {
+    transition-duration: 500ms;
+    opacity: 0;
+}
+
+.stockStatus {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.productLabels {
+    margin-right: 20px;
+    display: flex;
+}
+
+.productIcons {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    width: 100%;
+}
+
+
+.newProductBg {
+    margin-left: 6px;
+}
+.sale,.newProduct{
+position: relative;
+}
+.saleText{
+    position: absolute;
+  text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    color: var(--main-color-white);
+    transform: rotate(90deg);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.newProductText{
+composes: saleText;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 21px;
+}
+
+.name {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--main-color-black);
+}
+
+.price {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #262626;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+

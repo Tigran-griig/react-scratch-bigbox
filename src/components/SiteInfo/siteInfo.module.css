@@ -1,0 +1,119 @@
+.root {
+    margin-top: 104px;
+    margin-bottom: 100px;
+    display: flex;
+    max-width: 1219px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.block {
+    display: flex;
+    margin: 0 11px;
+}
+
+@media screen and (max-width: 1300px) {
+    .block {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 215px;
+    }
+}
+
+
+.ellipse {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    margin-right: 9px;
+}
+
+.ellipse1,.ellipse2,.ellipse3,.ellipse4 {
+    composes: ellipse;
+    border: 1px #33C0CB dashed;
+
+}
+
+
+
+.ellipse1Icon {
+    font-family: icomoon;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #33C0CB;
+}
+
+@media screen and (min-width:600px){
+    .ellipse1Icon,.ellipse2Icon,.ellipse3Icon,.ellipse4Icon{
+        cursor: pointer;
+    }
+    .ellipse1:hover,.ellipse2:hover,.ellipse3:hover,.ellipse4:hover {
+        /*border: 0;*/
+        background:#33C0CB;
+
+    }
+    .ellipse1Icon:hover,.ellipse2Icon:hover,.ellipse3Icon:hover,.ellipse4Icon:hover{
+        color: white;
+    }
+}
+
+.ellipse2Icon {
+  composes: ellipse1Icon;
+    color: #33C0CB;
+}
+.ellipse3Icon {
+    composes: ellipse1Icon;
+    color: #33C0CB;
+}
+.ellipse4Icon {
+    composes: ellipse1Icon;
+    color: #33C0CB;
+}
+@media screen and (max-width: 600px){
+    .ellipse1, .ellipse2,.ellipse3,.ellipse4{
+        background:#33C0CB;
+    }
+    .ellipse1Icon,.ellipse2Icon,.ellipse3Icon,.ellipse4Icon{
+        color: white;
+        cursor: pointer;
+    }
+}
+.ellipse1Icon:before {
+    content: "\e90d";
+}
+.ellipse2Icon:before {
+    content: "\e90e";
+}
+.ellipse3Icon:before {
+    content: "\e90f";
+}
+.ellipse4Icon:before {
+    content: "\e910";
+}
+
+.title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: #262626;
+}
+
+.text {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 5px;
+    color: #858585;
+}

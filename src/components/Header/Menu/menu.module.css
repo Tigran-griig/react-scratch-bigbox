@@ -1,0 +1,50 @@
+.container {
+    max-width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 19px 0;
+    align-items: inherit;
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        margin: 0 15px;
+    }
+}
+
+.menu {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 22px;
+    position: relative;
+}
+
+.menuLink {
+    font-style: normal;
+    font-weight: normal;
+    margin: 0 18px;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.menuLink:hover {
+    color: #FF4D41;
+}
+
+.menu :global(.active) {
+    color: #FF4D41;
+    border-bottom: 2px #FF4D41 solid;
+}
+
+.search {
+    margin: 0;
+    border: 0;
+    background: transparent;
+    outline: none;
+}
+

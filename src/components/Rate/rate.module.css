@@ -1,0 +1,37 @@
+.root {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 70px;
+}
+
+.rateActive {
+    font-family: icomoon;
+    font-size: 12px;
+    color: #FFC107;
+    margin: 0 2px;
+}
+
+.rateDisabled {
+    font-family: icomoon;
+    font-size: 12px;
+    color: #EEEEEE;
+    margin: 0 2px;
+}
+
+.addRating {
+    composes: rateDisabled;
+}
+
+.addRating:hover {
+    color: #FFC107;
+    cursor: pointer;
+}
+
+.rateActive:before {
+    content: "\e901";
+}
+
+.rateDisabled:before {
+    content: "\e901";
+}

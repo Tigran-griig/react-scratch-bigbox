@@ -1,0 +1,164 @@
+.root {
+    margin: 17px 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.remove {
+    composes: button from '../Button/button.module.css';
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin: 4.5px 0;
+    width: 45%;
+}
+
+.removeIcon {
+    font-family: icomoon;
+    font-size: 16px;
+    color: #BABABA;
+}
+
+.removeIcon:before {
+    content: "\e91b";
+}
+
+.img {
+    max-width: 125px;
+    max-height: 125px;
+    width: 100%;
+    margin: 0 26px;
+}
+
+.name {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #444444;
+    width: 17%;
+    text-align: center;
+}
+
+.quantity{
+    width: 21%;
+    display: flex;
+    justify-content: center;
+}
+
+.grandTotal {
+    text-align: center;
+    width: 17%;
+}
+
+.input{
+    composes: input from '../../components/SelectNumber/selectNumber.module.css';
+    background: var(--main-color-white);
+    height: 40px;
+    border: 1px solid #cacaca;
+    border-radius: 25px;
+}
+
+.increase {
+    composes: increase from '../../components/SelectNumber/selectNumber.module.css';
+    top: 3px;
+}
+.increase:before{
+    color:  #CACACA;
+
+}
+.increaseButton{
+    composes: increaseButton from '../../components/SelectNumber/selectNumber.module.css';
+    background-color: var(--main-color-white);
+    z-index: 5;
+    padding-right:12px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 0;
+    border: 1px solid #cacaca;
+    border-bottom: 0;
+
+}
+
+.increaseButton:hover {
+    background-color: var(--main-color-white);
+
+
+}
+
+.decreaseButton{
+    composes: increaseButton;
+    border: 1px solid #cacaca;
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 0;
+    border-top: 0;
+
+
+}
+
+
+.decrease{
+    composes: decrease from '../../components/SelectNumber/selectNumber.module.css';
+    background: white;
+    border: 0;
+
+}
+
+.decrease:before {
+    color: #CACACA;
+
+
+}
+
+.container {
+    position: relative;
+}
+
+
+@media screen and (max-width: 750px ) {
+    .grandTotal {
+        width: unset;
+    }
+
+    .block2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+@media screen and (max-width: 400px) {
+    .grandTotal{
+        width: 17%;
+    }
+    .name {
+        white-space: unset;
+    }
+    .block2{
+        flex-wrap: wrap;
+
+    }
+}

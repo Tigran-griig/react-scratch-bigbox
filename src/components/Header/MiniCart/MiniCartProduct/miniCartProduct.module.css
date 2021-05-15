@@ -1,0 +1,69 @@
+.root {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    margin: 8px 0;
+    max-height: 100px;
+}
+
+.product {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+.imgContainer {
+    max-width: 100px;
+    max-height: 100px;
+}
+.img{
+    width: 100%;
+}
+
+.details {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 430px) {
+    .details{
+        white-space: unset;
+        overflow: unset;
+    }
+}
+
+.name {
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #444444;
+}
+
+.quantity {
+    composes: price;
+    font-weight: normal;
+}
+
+.icon {
+    font-family: icomoon;
+    font-size: 18px;
+    color: #BBBBBB;
+    margin: 0 15px;
+}
+
+.icon:before {
+    content: "\e91a";
+}

@@ -1,0 +1,255 @@
+.header {
+    max-width: 1252px;
+    border-bottom: 0.2px solid #C5C5C5;
+    margin: 0 auto;
+}
+
+
+
+.font {
+    font-size: 11px;
+    line-height: 14px;
+    color: var(--main-color-black)
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        margin: 0 18px;
+    }
+
+    .header {
+        border: 0;
+    }
+}
+
+.bag {
+    width: 26%;
+    height: 100px;
+
+}
+
+.contacts {
+    width: 25%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 18px;
+    padding-top: 20px;
+}
+
+.logo {
+    width: 50%;
+    margin: 42px auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .logo {
+        margin: 0 auto;
+    }
+}
+
+.logoLink {
+    text-decoration: none;
+
+}
+
+@media screen and (max-width: 500px) {
+    .logoImg {
+        width: 60px;
+        height: 40px;
+    }
+
+    .bag, .contacts {
+        height: 40px;
+    }
+
+    .buttonIcon {
+        margin: 0;
+    }
+
+}
+
+.phoneNumber {
+    list-style: none;
+    text-align: start;
+    line-height: 11px;
+    font-size: 11px;
+    margin-bottom: -1px;
+    margin-left: 9px;
+
+}
+
+.phone {
+    display: flex;
+    align-items: baseline;
+}
+
+.email {
+    composes: phone;
+    margin-top: 6px;
+
+}
+
+.infoShipment {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 14px;
+    width: 21%;
+    align-items: center;
+}
+
+.shipmentText {
+    composes: font;
+    min-width: 130px;
+    margin-top: 4px;
+}
+
+
+.contactsContent {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contentBag {
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8px;
+    position: relative;
+}
+
+.basket {
+    composes: register;
+    margin-left: 60px;
+    margin-right: 20px;
+    margin-top: 12px;
+    position: relative;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .basket {
+        margin-left: 15px;
+    }
+
+}
+
+.basketText {
+    composes: font;
+    line-height: 0;
+    margin-top: 12px;
+
+}
+
+.badge {
+    position: absolute;
+    right: -13px;
+    bottom: 13px;
+}
+
+.basketBadge {
+    position: relative;
+}
+
+.badgeCount {
+    position: absolute;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--main-color-white);
+    top: 5px;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+}
+
+.phoneIcon, .emailIcon {
+    font-family: icomoon;
+    font-size: 13px;
+}
+
+.phoneIcon:before {
+    content: "\e90a";
+}
+
+.emailIcon:before {
+    content: "\e909";
+}
+
+.busIcon {
+    font-family: icomoon;
+    font-size: 40px;
+}
+
+.busIcon:before {
+    content: "\e903";
+}
+
+.smileIcon {
+    font-family: icomoon;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.smileIcon:before {
+    content: "\e90b";
+}
+
+
+.menu {
+    composes: smileIcon
+}
+
+.menu:before {
+    content: '\e912';
+}
+
+
+.buttonMenu {
+    composes: button from '../Button/button.module.css';
+}
+
+.buttonMenu:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999988;
+    cursor: initial;
+}
+
+
+.account {
+    text-decoration: none;
+    text-align: center;
+    color:var(--main-color-black);
+    font-size: 12px;
+    width: 110px;
+
+}
+.account:hover {
+    color:var(--main-color)
+}

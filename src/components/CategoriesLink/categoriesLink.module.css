@@ -1,0 +1,19 @@
+.root{
+margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.link{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #5C5C56;
+    text-decoration: none;
+    margin-right: 1px;
+}
+
+.root :global(.active){
+    color: var(--main-color-black);
+    font-weight: 600;
+}

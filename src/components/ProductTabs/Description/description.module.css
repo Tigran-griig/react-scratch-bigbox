@@ -1,0 +1,21 @@
+.root {
+    border: 0.5px solid #DCDCDC;
+    box-sizing: border-box;
+    margin-top: 26px;
+    padding: 15px 20px;
+    max-width: 1252px;
+}
+
+
+.description{
+    font-size: 13px;
+    line-height: 211.7%;
+    margin: 0;
+    color: #9A9A9A;
+}
+
+.list {
+    font-size: 13px;
+    line-height: 211.7%;
+    color: #9A9A9A;
+}

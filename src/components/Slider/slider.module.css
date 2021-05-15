@@ -1,0 +1,236 @@
+.root {
+    position: relative;
+    max-height: 520px;
+}
+
+@media screen and (max-width: 1000px) {
+    .root {
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 12px;
+    }
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.img:hover {
+    opacity: 0.7;
+    transition-duration: 500ms;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    margin: 30px;
+}
+
+.topLeft{
+    composes: content;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.topCenter{
+    composes: content;
+    justify-content: flex-start;
+    align-items: center;
+}
+.topRight{
+    composes: content;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.middleLeft{
+    composes: content;
+justify-content: flex-start;
+}
+.middleCenter{
+    composes: content;
+
+}
+.middleRight{
+    composes: content;
+    justify-content: end;
+
+
+}
+.bottomLeft{
+    composes: content;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+}
+.bottomCenter{
+    composes: content;
+    justify-content: flex-end;
+    align-items: center;
+}
+.bottomRight{
+    composes: content;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.button {
+    outline: none;
+    background: transparent;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    width: 147px;
+    height: 40px;
+    border-radius: 62px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #FFFFFF;
+    background: #000000;
+    transition-duration: 500ms;
+}
+
+
+.sliderButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}
+
+.sliderButton {
+    margin: 0 15px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px black solid;
+    background: transparent;
+    position: relative;
+    width: 5px;
+    height: 5px;
+    padding: 4px;
+}
+
+.sliderButton:disabled {
+    min-width: 8px;
+    min-height: 8px;
+    padding: 8px;
+}
+
+.sliderButton:disabled:before {
+    content: ' ';
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background: black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 499px) {
+    .content > p {
+        font-size: 18px;
+    }
+}
+
+
+.buttonPosition {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    bottom: 110px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .buttonPosition {
+        bottom: 60px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .buttonPosition {
+        bottom: 30px;
+    }
+
+}
+
+
+.slideLink{
+    text-decoration: none!important;
+}
+
+.text {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 20px;
+    margin-bottom: 0;
+    color: #000000;
+}
+
+
+.saleInfo{
+    font-size: 40px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+
+/*.sale{*/
+/*    font-weight: normal;*/
+/*    font-size: 18px;*/
+/*    line-height: 0px;*/
+/*    color: #FF4D41;*/
+/*    margin-bottom: 40px;*/
+
+/*}*/
+
+.sliderText:nth-child(1){
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 20px;
+    margin-bottom: 0;
+    color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+    .sliderText:nth-child(1){
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 20px;
+        margin-bottom: 0;
+        color: #000000;
+    }
+
+
+}

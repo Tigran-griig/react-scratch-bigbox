@@ -1,0 +1,112 @@
+.root {
+    position: absolute;
+    max-width: 372px;
+    max-height: 496px;
+    padding: 21px 17px;
+    z-index: 10;
+    top: 75px;
+    right: 0;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.products::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.products::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 15px;
+}
+
+@media screen  and (max-width: 500px) {
+    .root {
+        top: 35px;
+    }
+}
+
+
+
+.onlyContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.only {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+    margin: 0;
+}
+
+.grandTotal {
+    composes: only;
+}
+
+.buttons {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.entireButton {
+    composes: button from '../../Button/button.module.css';
+    border: 1px solid #33C0CB;
+    box-sizing: border-box;
+    border-radius: 62px;
+    height: 35px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 11px 17px;
+    max-width: 160px;
+    font-size: 11px;
+    line-height: 13px;
+    color: #33C0CB;
+    margin: 0 5px;
+    width: 100%;
+}
+
+.orderButton {
+    composes: entireButton;
+    color: var(--main-color-white);
+    background: #33C0CB;
+
+}
+.orderButton:hover{
+    background: var(--main-color-black);
+}
+
+.entireButton:hover{
+    background: var(--main-color-black);
+    border: 0;
+    color: var(--main-color-white);
+}
+
+@media screen  and (max-width: 430px) {
+    .root {
+        max-width: 250px;
+        border-top: 6px solid #33C0CB;
+    }
+    .entireButton{
+        font-size: 8px;
+        padding: 0;
+    }
+}

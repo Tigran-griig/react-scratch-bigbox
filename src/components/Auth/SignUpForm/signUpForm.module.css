@@ -1,0 +1,31 @@
+.root {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    margin-bottom: 13px;
+    width: 100%;
+    height: 49px;
+    background: #FFFFFF;
+    border: 0.5px solid #D8D8D8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+    padding-left:15px ;
+}
+
+.signUp {
+    composes: button from '../../Button/button.module.css';
+    background: #33C0CB;
+    border-radius: 49px;
+    padding: 15px 0;
+    color: var(--main-color-white);
+}
+
+.through {
+    composes: signUp;
+    background: #3B5998;
+    margin-top: 13px;
+
+}

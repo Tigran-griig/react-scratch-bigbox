@@ -1,0 +1,39 @@
+.root {
+    composes: root from '../SignUpForm/signUpForm.module.css';
+}
+
+.input {
+    composes: input from '../SignUpForm/signUpForm.module.css';
+}
+
+.signIn {
+    composes: signUp from '../SignUpForm/signUpForm.module.css';
+}
+
+.through {
+    composes: through from '../SignUpForm/signUpForm.module.css';
+}
+
+.restore {
+    composes: signIn;
+    background: transparent;
+    color: #9A9A9A;
+}
+
+.restore :hover {
+    text-decoration-line: underline;
+}
+
+.signUp {
+    composes: signIn;
+    font-size: 13px;
+    background: transparent;
+    color: #000000;
+}
+
+.signInError {
+    color: red;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+}

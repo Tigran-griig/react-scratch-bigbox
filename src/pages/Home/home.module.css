@@ -1,0 +1,341 @@
+.root {
+    max-width: 1276px;
+    margin: 0 auto;
+}
+
+.topProduct {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+
+.topProductTop{
+    display: flex;
+}
+
+.block1 {
+    width: 725px;
+    margin-right: 12px;
+}
+.block2 {
+    width: 515px
+}
+
+.newBanner{
+    composes: banner from '../../components/Banner/banner.module.css';
+    margin-bottom: 7px;
+}
+
+@media screen and (max-width: 1000px){
+    .topProduct{
+        margin: 0 12px;
+    }
+    .newBanner{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .topProductTop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .block1,.block2{
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+}
+
+.block3 {
+    width: 100%;
+}
+
+.bannerTitle1 {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 140px;
+    color: var(--main-color-white);
+}
+
+.bannerText1 {
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 22px;
+    color: var(--main-color-black);
+}
+
+.bannerText2 {
+    margin-right: 25px;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 0;
+    color: var(--main-color);
+}
+
+.bannerTitle2 {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 0;
+    color: var(--main-color-black)
+}
+
+.topProductBottom{
+    margin-top: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.smallBanner{
+    composes: banner from '../../components/Banner/banner.module.css';
+    width: 304px;
+    position: relative;
+    height: 304px;
+
+}
+
+@media screen and (max-width: 1300px) {
+    .topProductBottom {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .smallBanner{
+        composes: banner from '../../components/Banner/banner.module.css';
+        width: 304px;
+        height: 280px;
+        position: relative;
+        margin-bottom: 12px;
+        margin-left: 6px;
+        margin-right: 6px;
+
+    }
+}
+@media screen and (max-width: 1000px) {
+   .topProductBottom{
+       max-width: 590px;
+       flex-wrap: wrap;
+       margin-left: auto;
+       margin-right: auto;
+   }
+    .smallBanner{
+        composes: banner from '../../components/Banner/banner.module.css';
+        width: 280px;
+        position: relative;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .topProductBottom{
+        max-width: 465px;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .smallBanner{
+        composes: banner from '../../components/Banner/banner.module.css';
+        max-width: 220px;
+        max-height: 220px;
+        position: relative;
+        margin-bottom: 12px;
+
+    }
+}
+@media screen and (max-width: 500px) {
+    .topProductBottom{
+        max-width: 370px;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+    .smallBanner{
+        composes: banner from '../../components/Banner/banner.module.css';
+        max-width: 170px;
+        max-height: 170px;
+        position: relative;
+        margin-bottom: 12px;
+
+    }
+}
+
+/*@media screen and (max-width: 474px) {*/
+/*    .topProductBottom{*/
+/*        max-width: 535px;*/
+/*        flex-wrap: wrap;*/
+/*        margin-left: auto;*/
+/*        margin-right: auto;*/
+/*        justify-content: center;*/
+/*    }*/
+/*    .smallBanner{*/
+/*        composes: banner from '../../components/Banner/banner.module.css';*/
+/*        position: relative;*/
+/*        margin-bottom: 12px;*/
+
+/*    }*/
+/*}*/
+
+
+
+
+.smallBannerSale1{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 60px;
+    color: #FF4D41;
+}
+.smallBannerTitle1{
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 0;
+    text-align: right;
+    color: #767676;
+    margin-bottom: 10px;
+
+}
+
+.smallBannerText1{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 25px;
+    text-align: right;
+    opacity: 0.7;
+    color: #767676;
+}
+
+
+.smallBannerTitle2{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 0;
+    text-align: start;
+    color: #767676;
+}
+.smallBannerinfo1{
+    text-align: end;
+}
+
+.smallBannerText2{
+    text-align: start;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 0;
+    color: #4D8BBB;
+}
+
+
+.smallBannerinfo2{
+    text-align: start;
+}
+.smallBannerTitle3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 0;
+    margin: 0;
+    color: #262E29;
+}
+
+.smallBannerText3{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: #223A21;
+}
+
+
+
+.smallBannerTitle4{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 0;
+    margin: 0;
+    color: var(--main-color-white);
+}
+
+.smallBannerText4{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 29px;
+    line-height: 34px;
+    text-align: right;
+    color: #4B4148;
+}
+
+
+.topOffers{
+    max-width: 1276px;
+    display: flex;
+    margin-left: 5px;
+}
+
+.offersBanner{
+    composes: banner from '../../components/Banner/banner.module.css';
+    max-width: 620px;
+    width: 100%;
+    margin: 0 6px;
+}
+@media screen and (max-width: 1000px){
+    .topOffers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .offersBanner{
+        composes: banner from '../../components/Banner/banner.module.css';
+        max-width: 574px;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+}
+@media screen and (max-width: 600px){
+    .topOffers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:0 12px;
+    }
+    .offersBanner{
+        composes: banner from '../../components/Banner/banner.module.css';
+        max-width: 574px;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+}
+.offersName{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 0;
+    margin: 0;
+    color: #262626;
+}
+
+
+.offersProduct{
+    font-weight: normal;
+    font-size: 34px;
+    color: #262626;
+    line-height: 5px;
+}
+.offersPrice{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #262626;
+}
+
+.offersPrice>strong{
+    color: var(--main-color);
+
+}

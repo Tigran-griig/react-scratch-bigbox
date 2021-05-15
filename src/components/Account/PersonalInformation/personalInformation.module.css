@@ -1,0 +1,90 @@
+.root {
+margin-bottom: 230px;
+}
+.title {
+    composes: title from '../../../pages/Cart/cart.module.css';
+    margin-bottom: 70px;
+    max-width: 100%;
+}
+
+.container {
+    display: flex;
+
+    flex-wrap: nowrap;
+    margin: 0 40px;
+}
+
+@media screen and (max-width: 680px){
+    .container{
+        flex-wrap: wrap;
+    }
+}
+
+.menu {
+    padding-left: 30px;
+    margin-bottom: 26px;
+}
+
+.content {
+   max-width:391px;
+    width: 100%;
+    margin-left: 15px;
+}
+.input{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 35px;
+    padding-left: 10px;
+    outline-color: #33C0CB;
+}
+.label{
+    color:  #878787;
+    font-size: 12px;
+    line-height: 211.7%;
+}
+
+.button{
+  composes: signIn from '../../Auth/SignInForm/signInForm.module.css';
+    width: 174px!important;
+    margin-top: 49px;
+    padding: 10px 0;
+}
+
+.personalInformationError{
+    color: red;
+}
+
+.checkContainer{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    align-items: center;
+
+}
+
+.checkLabel{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #4A4A4A;
+    margin-left: 14px;
+}
+
+.checkbox{
+height: 15px;
+    width: 15px;
+    border: 1px solid #DADADA;
+    margin-left: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+.check{
+ font-family: icomoon;
+}
+.check:before{
+    content: "\e91c";
+    color: #33c0cb;
+    position: absolute;
+    bottom: 3px;
+}

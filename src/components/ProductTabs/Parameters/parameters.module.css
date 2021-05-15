@@ -1,0 +1,35 @@
+.root{
+    margin:50px auto;
+    max-width: 1252px;
+
+}
+:global(table) {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+:global(tr):hover {
+    background:#F4F4F4;
+}
+
+.label{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 31px;
+    color: #5C5C5C;
+    width: 50%;
+
+}
+.value{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 31px;
+    color: #5C5C5C;
+  width: 50%;
+}

@@ -1,0 +1,1 @@
+import { default } from './productImageCarousel.module.css'

@@ -1,0 +1,84 @@
+.root {
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    align-items: center;
+    display: inline-block
+}
+
+.input {
+    font-size: 14px;
+    padding: 0 0px 0 30px;
+    display: flex;
+    width: 70px;
+    height: 45px;
+    background-color: #e6ffff;
+    align-items: center;
+    justify-content: flex-start;
+    color: #004d4d;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border: 0;
+    outline: none;
+    text-align: start;
+}
+
+
+.increaseButton {
+    background-color: #33C0CB;
+    width: 46px;
+    height: 22.5px;
+    padding: 0;
+    cursor: pointer;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 0;
+    border: 0;
+    position: absolute;
+    right: -13px;
+    outline: none;
+
+}
+
+.decreaseButton {
+    composes: increaseButton;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 0;
+    bottom: 0;
+
+}
+
+.increase {
+    font-family: icomoon;
+    height: 90px;
+    font-size: 9px;
+}
+
+.decrease {
+    font-family: icomoon;
+    height: 90px;
+    font-size: 9px;
+}
+
+.increase:before {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    content: "\e918";
+}
+
+.decrease:before {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    content: "\e919";
+}
+
+
+.increaseButton:hover {
+    background-color: #008080;
+}
+
+
+

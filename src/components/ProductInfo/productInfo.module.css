@@ -1,0 +1,196 @@
+.root {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+}
+.root :global(.widget-svg) {
+    width: 17px !important;
+    height: 17px !important;
+    padding: 0 !important;
+}
+
+.root :global(.star-container) {
+    padding: 0 2px !important;
+}
+
+.details {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.rate {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.shortDescription {
+    font-size: 13px;
+    line-height: 211.7%;
+    color: #5F5F5F;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+    margin-top: 20px;
+}
+
+.review {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 166.69%;
+    letter-spacing: 0.06em;
+    color: #AFAFAF;
+    margin: 0;
+}
+
+.review:before {
+    content: '|';
+    margin: 0 5px;
+}
+
+.price {
+    font-size: 17px;
+    line-height: 20px;
+    color: #FF4D41;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.inStock {
+    font-family: icomoon;
+    font-size: 18px;
+}
+
+.inStock:before {
+    content: "\e915";
+    color: #33c0cb;
+}
+
+.outOfStock {
+    composes: inStock;
+}
+
+.outOfStock:before {
+    content: "\e915";
+    color: red;
+}
+
+.text {
+    font-family: "DejaVu Sans";
+    font-size: 13px;
+    line-height: 15px;
+    line-height: 15px;
+    color: #757575;
+    margin-left: 5px;
+}
+
+.parameters {
+    margin-top: 58px;
+}
+
+.selects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.optionColor {
+    font-family: icomoon;
+    font-size: 16px;
+
+}
+
+
+.quantity {
+    height: 45px;
+    width: 112px;
+    text-align: center;
+    outline: none;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 62px;
+}
+
+
+.addBag {
+    display: flex;
+    margin-top: 36px;
+}
+
+.select{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form {
+    max-width: 380px;
+}
+
+.button {
+    height: 45px;
+    width: 264px;
+    background: #33C0CB;
+    font-size: 13px;
+    border-radius: 62px;
+    border: 0;
+    outline: none;
+    color: var(--main-color-white);
+    margin-left: 20px;
+    cursor: pointer;
+}
+.button:hover{
+    background: var(--main-color-black);
+}
+
+
+@media screen and (max-width:390px ) {
+    .addBag{
+        flex-wrap: wrap;
+    }
+    .button{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+}
+
+.code{
+    font-size: 13px;
+    color: #AFAFAF;
+    margin-top: 58px;
+}
+.icons{
+    margin-top: 26px;
+}
+.iconF,.iconT,.iconI,.iconL{
+    font-family: icomoon;
+    color: #A9A9A9;
+    font-size: 30px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.iconF:hover,.iconT:hover,.iconI:hover,.iconL:hover{
+    color: var(--main-color-black);
+}
+
+.iconF:before{
+content: "\e902";
+}
+.iconT:before{
+content: "\e90c";
+}
+.iconI:before{
+content: "\e907";
+}
+.iconL:before{
+content: "\e908";
+}
+
+
